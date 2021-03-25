@@ -18,7 +18,7 @@ function App() {
   return (
     <div id="page-container" className="page-container">
       <h1>That's So Sweet!</h1>
-      <h2>Let someone know you're thinking of them by sharing something sweet</h2>
+      <h2>Let someone know you're thinking of them by sharing dessert</h2>
         <h3>Find a recipe that works with your schedule</h3>
         <div id="recipe-selector" className="recipe-selector">
             <label>Total Bake Time:&nbsp;
