@@ -1,38 +1,80 @@
-.App {
+.page-container {
+  background-image: url(https://cdn.shopify.com/s/files/1/0115/3266/4932/products/Gingham_Yellow_swatch_620x.png?v=1568559930);
+  min-height: 100vh;
+  padding: 32px;
+}
+
+img {
+  max-width: 250px;
+  height: auto;
+}
+
+h3 {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1, h2, footer {
+  text-align: center;
+  font-family: 'Lekton', sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h4 {
+  text-align: center;
+  font-family: 'Lekton', sans-serif;
+  padding: 12px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.recipe-selector {
+  text-align: center;
+}
+
+.recipe-cards{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 24px;
 }
 
-.App-link {
-  color: #61dafb;
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  margin: 24px;
+}
+@media screen and (max-width: 500px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  footer {
+    text-align: center;
+  }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  cursor: pointer;
 }
+
+.card-img {
+  width: 100%;
+  height: auto;
+}
+
+.item {
+  max-height: 125px;
+  height: 150px;
+  overflow: hidden;
+  position: relative;
+}
+
+.bake-time {
+  text-align: center;
+  padding: 8px;
+}
+
